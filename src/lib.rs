@@ -19,13 +19,6 @@
 #![allow(non_camel_case_types)]
 #![no_std]
 
-extern crate bare_metal;
-extern crate cortex_m;
-extern crate vcell;
-
-#[cfg(feature = "rt")]
-extern crate cortex_m_rt;
-
 #[cfg(feature = "stm32f100")]
 pub mod stm32f100;
 
@@ -40,3 +33,4 @@ pub mod stm32f103;
 
 #[cfg(feature = "stm32f107")]
 pub mod stm32f107;
+

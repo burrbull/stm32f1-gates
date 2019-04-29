@@ -15,7 +15,7 @@ compile the device(s) you want. To use, in your Cargo.toml:
 
 ```toml
 [dependencies.stm32f1]
-version = "0.6.0"
+version = "0.7.0"
 features = ["stm32f100", "rt"]
 ```
 
@@ -24,7 +24,6 @@ The `rt` feature is optional and brings in support for `cortex-m-rt`.
 In your code:
 
 ```rust
-extern crate stm32f1;
 use stm32f1::stm32f100;
 
 let mut peripherals = stm32f100::Peripherals::take().unwrap();
